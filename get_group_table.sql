@@ -22,4 +22,4 @@ inner join (
 	group by groupname
 ) as pc on
 	g.groupname = pc.groupname
-order by Points desc;
+order by Points desc, g.groupname ASC;
