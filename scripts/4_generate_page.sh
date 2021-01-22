@@ -10,10 +10,13 @@ echo "${GROUP_TABLE}" > tmp.html
 
 cp template.html index.html
 
-sed -i -e '/GROUP_TABLE/r tmp.html' index.html
+# Account for BSD sed being horrible
+[[ -x "$(command -v gsed)" ]] && s=gsed || s=sed
+
+$s -i -e '/GROUP_TABLE/r tmp.html' index.html
 
 echo "${PLAYER_TABLE}" > tmp.html
 
-sed -i -e '/PLAYER_TABLE/r tmp.html' index.html
+$s -i -e '/PLAYER_TABLE/r tmp.html' index.html
 
 rm tmp.html
