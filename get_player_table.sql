@@ -9,4 +9,4 @@ left join (
 	group by id
 ) as a on
 	user_ids.id = a.id
-order by achievements DESC;
+order by achievements DESC, username ASC;
