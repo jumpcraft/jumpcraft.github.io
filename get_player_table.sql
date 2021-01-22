@@ -9,5 +9,5 @@ left join (
 	group by id
 ) as a on
 	user_ids.id = a.id
-where achievements > 0
+where a.num is not null
 order by achievements DESC, username ASC;
