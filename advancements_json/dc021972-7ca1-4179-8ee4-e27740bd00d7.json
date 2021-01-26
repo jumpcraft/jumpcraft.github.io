@@ -1,0 +1,46 @@
+{
+  "blazeandcave:bacap/root": {
+    "criteria": {
+      "location": "2021-01-20 11:07:11 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:bacap/building_milestone": {
+    "criteria": {
+      "ladder_climbers_inc": "2021-01-20 11:07:26 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:biomes/explorer_of_worlds": {
+    "criteria": {
+      "plains": "2021-01-20 11:07:11 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:bacap/advancement_legend": {
+    "criteria": {
+      "ladder_climbers_inc": "2021-01-20 11:07:26 +0100",
+      "bacap_root": "2021-01-20 11:07:12 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:building/ladder_climbers_inc": {
+    "criteria": {
+      "enter_ladder": "2021-01-20 11:07:26 +0100"
+    },
+    "done": false
+  },
+  "blazeandcave:biomes/one_with_the_forest": {
+    "criteria": {
+      "plains": "2021-01-20 11:07:11 +0100"
+    },
+    "done": false
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2021-01-20 11:07:11 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}
