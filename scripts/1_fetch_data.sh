@@ -2,6 +2,11 @@
 
 set -euxo pipefail
 
+if [[ -d advancements_json ]]; then
+    echo "Removing advancements_json"
+    rm -r advancements_json
+fi
+
 mkdir -p advancements_json
 
 export SSHPASS="$(cat ssh_pass)"
