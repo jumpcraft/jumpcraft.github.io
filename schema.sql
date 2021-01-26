@@ -22,3 +22,12 @@ CREATE TABLE `user_ids` (
     PRIMARY KEY (`username`),
     UNIQUE (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+DROP TABLE IF EXISTS `user_stat`;
+CREATE TABLE `user_stat` (
+  `id` varchar(128) NOT NULL,
+  `category` varchar(126) NOT NULL,
+  `stat` varchar(126) NOT NULL,
+  `value` bigint(20) NOT NULL,
+  PRIMARY KEY (`id`, `category`, `stat`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

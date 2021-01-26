@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VALUES_STRING="$(cat advancements_json/whitelist.json| jq -r """[.[] | \"('\(.name)','\(.uuid)')\"] | join(\", \")""")"
+VALUES_STRING="$(cat data/whitelist.json| jq -r """[.[] | \"('\(.name)','\(.uuid)')\"] | join(\", \")""")"
 
 echo $VALUES_STRING
 
